@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<otrs_package version="1.0">
+    <Name>MarkTicketSeenUnseen</Name>
+    <Version>10.1.1</Version>
+    <Framework>10.1.x</Framework>
+    <Vendor>OTOBO GmbH</Vendor>
+    <URL>http://otobo.de/</URL>
+    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <Description Lang="en">Mark whole tickets or single articles as unseen or seen.</Description>
+    <Description Lang="de">Komplette Tickets oder einzelne Artikel als ungelesen oder gelesen markieren.</Description>
+    <Filelist>
+        <File Permission="660" Location="Kernel/Config/Files/XML/OTOBOMarkTicketSeenUnseen.xml"/>
+        <File Permission="660" Location="Kernel/Language/de_OTOBOMarkTicketSeenUnseen.pm"/>
+        <File Permission="660" Location="Kernel/Modules/AgentTicketMarkSeenUnseen.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/ArticleAction/MarkArticleSeenUnseen.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/OTOBOMarkTicketSeenUnseenBulk.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/OTOBOMarkTicketSeenUnseenBulkAction.pm"/>
+        <File Permission="660" Location="scripts/test/OTOBOMarkTicketSeenUnseen/Selenium/Agent/OTOBOMarkTicketSeenUnseenZoom.t"/>
+        <File Permission="660" Location="var/packagesetup/OTOBOMarkTicketSeenUnseen.pm"/>
+    </Filelist>
+    <CodeUninstall Type="pre"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::OTOBOMarkTicketSeenUnseen')->CodeUninstall();
+    ]]></CodeUninstall>
+    <CodeInstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::OTOBOMarkTicketSeenUnseen')->CodeInstall();
+    ]]></CodeInstall>
+    <CodeUpgrade Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::OTOBOMarkTicketSeenUnseen')->CodeUpgrade();
+    ]]></CodeUpgrade>
+    <CodeReinstall Type="post"><![CDATA[
+        $Kernel::OM->Get('var::packagesetup::OTOBOMarkTicketSeenUnseen')->CodeReinstall();
+    ]]></CodeReinstall>
+</otrs_package>
+
