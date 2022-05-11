@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<otrs_config version="2.0" init="Changes">
+<otobo_config version="2.0" init="Changes">
     <Setting Name="Frontend::Module###AgentTicketMarkSeenUnseen" Required="0" Valid="1">
         <Description Translatable="1">Frontend module registration for the agent interface.</Description>
         <Navigation>Frontend::Agent::ModuleRegistration</Navigation>
@@ -196,5 +196,5 @@
             </Hash>
         </Value>
     </Setting>
-</otrs_config>
+</otobo_config>
 
