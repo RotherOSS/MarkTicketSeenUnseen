@@ -54,7 +54,7 @@ sub Data {
     $Self->{Translation}->{'Mark article as unseen'} = 'Artikel als ungelesen markieren';
     $Self->{Translation}->{'Mark tickets as seen'} = 'Tickets als gelesen markieren';
     $Self->{Translation}->{'Mark tickets as unseen'} = 'Tickets als ungelesen markieren';
-
+    $Self->{Translation}->{'Mark as (un)seen'} = 'Ticket (un)gelesen';
     return 1;
 }
 

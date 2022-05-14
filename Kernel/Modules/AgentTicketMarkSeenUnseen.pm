@@ -62,7 +62,7 @@ sub Run {
     }
 
     my @Articles = $ArticleObject->ArticleList(
-        TicketID   => $Param{TicketID},
+        TicketID   => $GetParam{TicketID},
     );
 
     my @ArticleIDs;
