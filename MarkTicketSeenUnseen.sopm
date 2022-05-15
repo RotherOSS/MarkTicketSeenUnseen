@@ -3,7 +3,7 @@
     <Name>MarkTicketSeenUnseen</Name>
     <Version>10.1.1</Version>
     <Framework>10.1.x</Framework>
-    <Vendor>OTOBO GmbH</Vendor>
+    <Vendor>Rother OSS GmbH</Vendor>
     <URL>http://otobo.de/</URL>
     <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
     <Description Lang="en">Mark whole tickets or single articles as unseen or seen.</Description>
