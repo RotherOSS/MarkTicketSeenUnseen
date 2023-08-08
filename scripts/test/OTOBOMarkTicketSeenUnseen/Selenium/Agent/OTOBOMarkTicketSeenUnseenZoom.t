@@ -1,6 +1,6 @@
 # --
-# Copyright (C) 2012-2022 Znuny GmbH, http://znuny.com/
-# Copyright (C) 2022-2022 OTOBO GmbH, http://otobo.de/
+# Copyright (C) 2012-2023 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2022-2023 OTOBO GmbH, http://otobo.de/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -169,4 +169,3 @@ my $SeleniumTest = sub {
 $SeleniumObject->RunTest($SeleniumTest);
 
 1;
-

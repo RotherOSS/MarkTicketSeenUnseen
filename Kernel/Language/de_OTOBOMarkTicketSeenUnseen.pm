@@ -1,6 +1,6 @@
 # --
-# Copyright (C) 2012-2022 Znuny GmbH, http://znuny.com/
-# Copyright (C) 2022-2022 OTOBO GmbH, http://otobo.de/
+# Copyright (C) 2012-2023 Znuny GmbH, http://znuny.com/
+# Copyright (C) 2022-2023 OTOBO GmbH, http://otobo.de/
 # --
 # This software comes with ABSOLUTELY NO WARRANTY. For details, see
 # the enclosed file COPYING for license information (AGPL). If you
@@ -18,11 +18,15 @@ sub Data {
     my $Self = shift;
 
     # SysConfig
-    $Self->{Translation}->{"Defines the config parameters available in the preferences view. The default redirect URL from SysConfig 'MarkTicketUnseenRedirectDefaultURL' is used if no selection is made by the agent."}
+    $Self->{Translation}->{
+        "Defines the config parameters available in the preferences view. The default redirect URL from SysConfig 'MarkTicketUnseenRedirectDefaultURL' is used if no selection is made by the agent."
+        }
         = "Definiert die zur Verfügung stehenden Konfigurationsparameter in der Einstellungsansicht. Der Standard-Umleitungs-URL der SysConfig-Einstellung 'MarkTicketUnseenRedirectDefaultURL' wird verwendet, falls der Agent keine Auswahl getroffen hat.";
     $Self->{Translation}->{"Defines the redirect URL for setting a ticket article to 'unseen."}
         = "Definiert den URL, zu dem umgeleitet wird, nachdem ein Artikel auf 'ungelesen' gesetzt wurde.";
-    $Self->{Translation}->{"Defines the config parameters available in the preferences view. The default redirect URL from SysConfig 'MarkTicketSeenRedirectDefaultURL' is used if no selection is made by the agent."}
+    $Self->{Translation}->{
+        "Defines the config parameters available in the preferences view. The default redirect URL from SysConfig 'MarkTicketSeenRedirectDefaultURL' is used if no selection is made by the agent."
+        }
         = "Definiert die zur Verfügung stehenden Konfigurationsparameter in der Einstellungsansicht. Der Standard-Umleitungs-URL der SysConfig-Einstellung 'MarkTicketSeenRedirectDefaultURL' wird verwendet, falls der Agent keine Auswahl getroffen hat.";
     $Self->{Translation}->{"Defines the redirect URL for setting a ticket article to 'seen'."}
         = "Definiert den URL, zu dem umgeleitet wird, nachdem ein Artikel auf 'gelesen' gesetzt wurde.";
@@ -45,18 +49,17 @@ sub Data {
     $Self->{Translation}->{'Dialog to show after marking a ticket as unseen'}
         = 'Dialog, der angezeigt wird, nachdem ein Ticket als ungelesen markiert wurde.';
     $Self->{Translation}->{'Dialog to show after marking a ticket as seen'} = 'Dialog, der angezeigt wird, nachdem ein Ticket als gelesen markiert wurde.';
-    $Self->{Translation}->{'Mark as unseen'} = 'Als ungelesen markieren';
-    $Self->{Translation}->{'Mark as seen'} = 'Als gelesen markieren';
-    $Self->{Translation}->{'Mark ticket as unseen'} = 'Ticket als ungelesen markieren';
-    $Self->{Translation}->{'Mark ticket as seen'} = 'Ticket als gelesen markieren';
+    $Self->{Translation}->{'Mark as unseen'}                                = 'Als ungelesen markieren';
+    $Self->{Translation}->{'Mark as seen'}                                  = 'Als gelesen markieren';
+    $Self->{Translation}->{'Mark ticket as unseen'}                         = 'Ticket als ungelesen markieren';
+    $Self->{Translation}->{'Mark ticket as seen'}                           = 'Ticket als gelesen markieren';
 
     # Templates and output filters
     $Self->{Translation}->{'Mark article as unseen'} = 'Artikel als ungelesen markieren';
-    $Self->{Translation}->{'Mark tickets as seen'} = 'Tickets als gelesen markieren';
+    $Self->{Translation}->{'Mark tickets as seen'}   = 'Tickets als gelesen markieren';
     $Self->{Translation}->{'Mark tickets as unseen'} = 'Tickets als ungelesen markieren';
-    $Self->{Translation}->{'Mark as (un)seen'} = 'Ticket (un)gelesen';
+    $Self->{Translation}->{'Mark as (un)seen'}       = 'Ticket (un)gelesen';
     return 1;
 }
 
 1;
-
