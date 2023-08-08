@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<otrs_package version="1.0">
+<otobo_package version="1.0">
     <Name>MarkTicketSeenUnseen</Name>
     <Version>10.1.1</Version>
     <Framework>10.1.x</Framework>
     <Vendor>Rother OSS GmbH</Vendor>
-    <URL>http://otobo.de/</URL>
-    <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
+    <URL>https://otobo.de/</URL>
+    <License>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</License>
     <Description Lang="en">Mark whole tickets or single articles as unseen or seen.</Description>
     <Description Lang="de">Komplette Tickets oder einzelne Artikel als ungelesen oder gelesen markieren.</Description>
     <Filelist>
@@ -13,8 +13,7 @@
         <File Permission="660" Location="Kernel/Language/de_OTOBOMarkTicketSeenUnseen.pm"/>
         <File Permission="660" Location="Kernel/Modules/AgentTicketMarkSeenUnseen.pm"/>
         <File Permission="660" Location="Kernel/Output/HTML/ArticleAction/MarkArticleSeenUnseen.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/OTOBOMarkTicketSeenUnseenBulk.pm"/>
-        <File Permission="660" Location="Kernel/Output/HTML/FilterElementPost/OTOBOMarkTicketSeenUnseenBulkAction.pm"/>
+        <File Permission="660" Location="Kernel/Output/HTML/TicketBulk/MarkTicketSeenUnseen.pm" />
         <File Permission="660" Location="scripts/test/OTOBOMarkTicketSeenUnseen/Selenium/Agent/OTOBOMarkTicketSeenUnseenZoom.t"/>
         <File Permission="660" Location="var/packagesetup/OTOBOMarkTicketSeenUnseen.pm"/>
     </Filelist>
@@ -30,5 +29,4 @@
     <CodeReinstall Type="post"><![CDATA[
         $Kernel::OM->Get('var::packagesetup::OTOBOMarkTicketSeenUnseen')->CodeReinstall();
     ]]></CodeReinstall>
-</otrs_package>
-
+</otobo_package>
