@@ -171,7 +171,7 @@
             </Hash>
         </Value>
     </Setting>
-    <Setting Name="Ticket::Frontend::BulkModule###001-MarkTicketUnseen" Required="0" Valid="1">
+    <Setting Name="Ticket::Frontend::BulkModule###001-MarkTicketSeenUnseen" Required="0" Valid="1">
         <Description Translatable="1">This configuration registers a bulk module to mark tickets as seen or unseen via bulk action.</Description>
         <!-- TODO check which navigation to use for bulk modules -->
         <Navigation>Frontend::Agent::View::TicketBulk</Navigation>
